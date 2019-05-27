@@ -7,8 +7,8 @@ A boilerplate to deploy Django with cool stuff. Also serves as an example projec
 Where it is described how this boilerplate was created from scratch so that you can build your own.
 
 ### Basic Usage
-1. First run `make build` inside root directory.
-2. Then run `make up` to start up the project for first time.
+1. First run `sudo make build` inside root directory.
+2. Then run `sudo make up` to start up the project for first time.
 
 Checkout the [commands](#commands) section for more usage.
 
@@ -31,6 +31,7 @@ To use this project, run this commands:
 5. `make shell-web` to shell access web container.
 6. `make shell-db` to shell access db container.
 7. `make shell-nginx` to shell access nginx container.
+8. `make shell-redis` to shell access redis container.
 8. `make logs-web` to log access web container.
 9. `make logs-db` to log access db container.
 10. `make logs-nginx` to log access nginx container.
@@ -38,4 +39,8 @@ To use this project, run this commands:
 12. `make log-web` to log access web container.
 13. `make log-db` to log access db container.
 14. `make log-nginx` to log access nginx container.
-14. `make restart` to restart containers.
+15. `make restart` to restart containers.
+16. `make restart db` to restart postgresql container.
+17. `make restart web` to restart django web container.
+18. `make restart redis` to restart redis container.
+19. `make restart pgadmin` to restart pgadmin4 container.
